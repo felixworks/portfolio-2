@@ -5,7 +5,7 @@
 #page-nav {
   width: 100%;
   background: #000;
-  position: sticky;
+  position: fixed;
   top: 0;
 }
 
@@ -40,6 +40,152 @@ input#hamburger {
 }
 #page-nav input:checked ~ ul {
   display: block;
+}
+
+/* Main */
+
+.welcome-section {
+}
+
+article.creation-box {
+  border: 5px solid black;
+  border-radius: 20px;
+  font-family: "Source Code Pro", monospace;
+  margin: 50px auto 20px auto;
+  padding: 30px 10px;
+  transition: 1s;
+}
+
+.app-title {
+  color: black;
+  font-weight: 700;
+  font-size: 1.7rem;
+  position: relative;
+  text-align: center;
+}
+
+.creations {
+  padding-top: 40px;
+  background-color: white;
+}
+
+.creations h2 {
+  color: black;
+}
+
+.creation-box {
+  border: 5px solid black;
+  border-radius: 20px;
+  font-family: "Source Code Pro", monospace;
+  margin: 50px auto 20px auto;
+  padding: 30px 10px;
+  transition: 1s;
+}
+
+.creation-box header {
+  text-align: center;
+}
+
+.app-title {
+  color: black;
+  font-weight: 700;
+  font-size: 1.7rem;
+  position: relative;
+  text-align: center;
+}
+
+.fa-arrow-up {
+  display: none;
+  position: absolute;
+  transition: 0.5s;
+  -ms-transform: rotate(40deg);
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+.app-title:focus .fa-arrow-up,
+.app-title:hover .fa-arrow-up {
+  display: inline-block;
+}
+
+.mockup {
+  display: block;
+  margin: auto;
+  width: fit-content;
+  width: -moz-fit-content;
+}
+
+.mockup img {
+  width: 260px;
+}
+
+.creation-box .tech-stack {
+  margin: 30px auto 10px auto;
+}
+
+.tech-stack-lists {
+  margin: auto;
+  width: fit-content;
+  width: -moz-fit-content;
+}
+
+.tech-stack-section {
+  margin: auto;
+  width: fit-content;
+  width: -moz-fit-content;
+}
+
+.creation-box .skill-list {
+  display: inline-block;
+  margin: auto 10px;
+  width: fit-content;
+  width: -moz-fit-content;
+}
+
+.app-description {
+  font-family: "PT Sans";
+  font-size: 1rem;
+  margin: auto;
+  max-width: 700px;
+  padding: 10px 10px;
+  text-align: center;
+}
+
+.viewing-options {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.viewing-options a {
+  color: black;
+  margin: auto 10px;
+  text-align: center;
+}
+
+.view-app {
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+  display: block;
+  font-size: 2rem;
+  margin: auto;
+  margin-bottom: 5px;
+  padding: 10px;
+  transition: 0.5s;
+  width: fit-content;
+  width: -moz-fit-content;
+}
+
+.link-to-view:hover,
+.link-to-view:focus {
+  font-weight: bold;
+}
+
+.link-to-view:hover .view-app,
+.link-to-view:focus .view-app {
+  background-color: black;
+  color: white;
 }
 
 @media screen and (min-width: 768px) {
